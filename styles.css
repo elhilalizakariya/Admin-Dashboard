@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 
 :root {
   --primary-color: #1992d4;
@@ -12,15 +14,15 @@
 body{
     display:grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 0.9fr 5fr;
 
     background-color: #e2e8f0;
-      font-family: "Roboto", sans-serif;
+
+
+      font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
-  /* font-weight: <weight>; */
+
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
 
 }
 
@@ -53,7 +55,7 @@ body {
     grid-template-columns:2fr 1fr;
     grid-template-rows: 1fr 2fr;
     align-items: center;
-    padding: 10px 30px;
+
 }
 
 .content{
