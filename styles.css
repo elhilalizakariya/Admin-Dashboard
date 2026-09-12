@@ -59,6 +59,7 @@ body {
 .content{
     display:grid;
     grid-template-columns: 3fr 1fr;
+    grid-template-rows: 2fr 2fr;
     gap: 20px;
     margin: 30px;
 }
@@ -242,4 +243,75 @@ button{
     margin-bottom:15px;
     font-size: 1.3em;
     font-weight: 500;
+}
+
+.announcements{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+
+}
+
+.announcement {
+    color:#636363;
+    font-size:0.9em;
+    position: relative;
+    padding: 15px;
+}
+
+.announcement:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  width: 90%;
+  border-bottom: 1px solid #ccc;
+}
+
+.announcement-head{
+    font-weight:500;
+    font-size:1rem;
+    color:black;
+    margin-bottom:5px;
+    
+}
+
+.trendings .user{
+    display:flex;
+    
+    justify-content: start;
+    column-gap:30px;
+}
+
+.trendings{
+    display:flex;
+    flex-direction:column;
+    align-items:start;
+    gap:20px;
+}
+
+.trendings .user img{
+    height: 60px;
+    width:60px;
+    object-fit: none;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 80% 30%;
+    grid-row: span 2;
+
+
+}
+.user-profile{
+    align-self: center;
+    color:#636363;
+
+
+
+}
+
+.user-profile span{
+    color:black;
+}
+.user span{
+    font-size:1rem;
 }
